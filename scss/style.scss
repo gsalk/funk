@@ -1,0 +1,341 @@
+//color variables
+$primary-color: #fff; 
+$text-color: #000;
+
+//font-family
+$font-stack: 'Lucida Console';
+
+//border
+@mixin border{
+    border-width: 7px;
+    border-style: solid;
+    border-color: #000;
+}
+
+//base
+body{
+    background-color: $primary-color;
+    font-family: $font-stack;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: bold;
+    width:100%!important;
+    height:100%;
+    padding:0px;
+    margin:0px;
+    min-width:310px;
+}
+//navigation
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    background: $primary-color;
+    width:90%;
+    text-align:left;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    color: $text-color;
+    text-decoration: none;
+    padding-right: 20px;
+}
+ul li a:hover, ul li a:visited{
+    color: $text-color;
+    background: $primary-color;
+    text-decoration: none;
+    text-decoration-color: $primary-color;
+}
+
+.dropdown li a{
+    padding-top: 20px;
+}
+
+ul li ul.dropdown{
+    min-width: 100%; 
+    background: $primary-color;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	
+}
+ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+}
+//header
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header-section{
+    display: block;
+    width:90%;
+    @include border;
+}
+//fcebook icon
+.icon img{
+    @include border;
+    border-top: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 180px;
+    margin-left: 35px;
+}
+//reponsive icon
+@media (max-width: 417px) {
+    .icon img {
+        zoom:80%;
+    }
+}
+//logo
+.logo img {
+    float: right;
+    margin-top: -25px; 
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+//responsive logo
+@media (max-width: 861px) {
+    .logo img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 507px) {
+    .logo img {
+        margin-top: 10px;
+        zoom:80%;
+    }
+}
+
+@media (max-width: 406px) {
+    .logo img {
+        margin-top: 10px;
+        zoom:60%;
+    }
+}
+//slideshow
+.event-1, .description-1, .event-2, .description-2, .event-3, .description-3, .event-4, .description-4, .event-5, .description-5, .kontaktai{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+.slideshow {
+    width:90%;
+    height: 420px;
+    overflow: hidden;
+    @include border;
+    border-top: none;
+    align-items: center;
+}
+.slideshow img {
+    width: 100%;
+}
+.buttons{
+    z-index: 2;
+    position: absolute;
+    padding-top:370px;
+}
+.slidesButton{
+    @include border;
+    border-width: 3px;
+    background-color: $primary-color;
+    border-radius: 50px;
+    zoom:110%;
+}
+//responsive slideshow
+@media (max-width: 882px) {
+    .slideshow {
+        height: 320px;
+    }
+    .buttons{
+        padding-top:270px;
+    }
+}
+@media (max-width: 673px) {
+    .slideshow {
+        height: 280px;
+    }
+    .buttons{
+        padding-top:235px;
+    }
+}
+@media (max-width: 589px) {
+    .slideshow {
+        height: 230px;
+    }
+    .buttons{
+        padding-top:185px;
+    }
+}
+@media (max-width: 484px) {
+    .slideshow {
+        height: 190px;
+    }
+    .buttons{
+        padding-top:100px;
+    }
+}
+@media (max-width: 484px) {
+    .slideshow {
+        height: 145px;
+    }
+    .buttons{
+        zoom:80%;
+        padding-top:130px;
+    }
+}
+//description
+.text{
+    width:90%;
+    @include border;
+    border-top: none;
+    justify-content: center;
+}
+h1{
+    font-weight: bold;
+    font-size:16px;
+}
+.description{
+    width:68%;
+    padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-align: left;
+}
+.description p{
+    padding-right: 20px;
+}
+.price{
+    width:30%;
+    @include border;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: none;
+    padding: 40px;
+    margin-right: 40px;
+    float:right;
+}
+.price p{
+    text-align: center;
+}
+
+.summary{
+    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+//responsive text
+@media (max-width: 1013px) {
+    .price{
+        padding: 20px;
+    }
+}
+@media (max-width: 855px) {
+    .text{
+        font-size:13px;
+    }
+}
+@media (max-width: 715px) {
+    .price{
+        width:100%;
+        padding-top: 30px;
+        margin: 0;
+        text-align: center;
+    }
+    h1{
+        padding-top:80px;
+    }
+    .description {
+        text-align: center;
+        width: 100%;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .summary {
+        text-align:center;
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+@media (max-width: 493px) {
+    .text, .kontaktai{
+        font-size:12px;
+    }
+    .price{
+        padding:15px;
+    }
+    .description {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    h1{
+        padding-top:60px;
+    }
+}
+@media (max-width: 443px) {
+    h1{
+        padding-top:70px;
+    }
+}
+
+//kontaktai
+.kontaktai{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+.info{
+    display: block;
+    width:90%;
+    @include border;
+    border-top:none;
+    text-align: center;
+    padding: 50px;
+}
+.kontaktai p{
+    padding-top:30px;
+}
+
+//responsive kontaktai
+@media (max-width: 565px) {
+    .kontaktai img{
+        zoom:60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .kontaktai img{
+        zoom:40%;
+    }
+}
+
+
+
+
+
+
+
+
