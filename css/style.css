@@ -43,7 +43,8 @@ ul li a:hover, ul li a:visited {
   text-decoration-color: #fff; }
 
 .dropdown li a {
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-left: 20px; }
 
 ul li ul.dropdown {
   min-width: 100%;
@@ -105,7 +106,27 @@ header {
   .logo img {
     margin-top: 10px;
     zoom: 60%; } }
-.event-1, .description-1, .event-2, .description-2, .event-3, .description-3, .event-4, .description-4, .event-5, .description-5, .kontaktai {
+#hero {
+  overflow: scroll;
+  height: 1160px; }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  z-index: 3;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100px; }
+
+.event-1, .description-1, .event-2, .description-2, .event-3, .description-3, .event-4, .description-4, .event-5, .description-5, .kontaktai, .description-intro-1, .description-intro-2, .description-intro-3, .description-intro-4, .description-intro-5 {
   display: flex;
   width: 100%;
   justify-content: center; }
@@ -123,51 +144,21 @@ header {
 .slideshow img {
   width: 100%; }
 
-.buttons {
-  z-index: 2;
-  position: absolute;
-  padding-top: 370px; }
-
-.slidesButton {
-  border-width: 7px;
-  border-style: solid;
-  border-color: #000;
-  border-width: 3px;
-  background-color: #fff;
-  border-radius: 50px;
-  zoom: 110%; }
-
 @media (max-width: 882px) {
   .slideshow {
-    height: 320px; }
-
-  .buttons {
-    padding-top: 270px; } }
+    height: 320px; } }
 @media (max-width: 673px) {
   .slideshow {
-    height: 280px; }
-
-  .buttons {
-    padding-top: 235px; } }
+    height: 280px; } }
 @media (max-width: 589px) {
   .slideshow {
-    height: 230px; }
-
-  .buttons {
-    padding-top: 185px; } }
+    height: 230px; } }
 @media (max-width: 484px) {
   .slideshow {
-    height: 190px; }
-
-  .buttons {
-    padding-top: 100px; } }
+    height: 190px; } }
 @media (max-width: 484px) {
   .slideshow {
-    height: 145px; }
-
-  .buttons {
-    zoom: 80%;
-    padding-top: 130px; } }
+    height: 145px; } }
 .text {
   width: 90%;
   border-width: 7px;
@@ -176,9 +167,13 @@ header {
   border-top: none;
   justify-content: center; }
 
+h1 span {
+  background-color: #000; }
+
 h1 {
   font-weight: bold;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #fff; }
 
 .description {
   width: 68%;
@@ -268,13 +263,59 @@ h1 {
   padding: 50px; }
 
 .kontaktai p {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 0px; }
 
+.icons-footer i {
+  color: #000; }
+
+#contact_form input, #contact_form textarea {
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 3px;
+  width: 30%; }
+
+#contact_form {
+  padding-top: 20px; }
+
+#contact_form label {
+  padding-top: 10px; }
+
+#submit_button {
+  width: 10%;
+  background-color: #000;
+  color: #fff; }
+
+.copyright {
+  float: left; }
+
+@media (max-width: 1093px) {
+  #submit_button {
+    width: 10%; }
+
+  #contact_form input, #contact_form textarea {
+    width: 30%; } }
+@media (max-width: 810px) {
+  #submit_button {
+    width: 20%; }
+
+  #myBtn {
+    zoom: 80%; }
+
+  #contact_form input, #contact_form textarea {
+    width: 50%; } }
 @media (max-width: 565px) {
   .kontaktai img {
-    zoom: 60%; } }
+    zoom: 60%; }
+
+  #myBtn {
+    margin-right: -20px; }
+
+  #submit_button {
+    width: 25%; } }
 @media (max-width: 400px) {
   .kontaktai img {
-    zoom: 40%; } }
+    zoom: 45%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,6 @@ $font-stack: 'Lucida Console';
     border-style: solid;
     border-color: #000;
 }
-
 //base
 body{
     background-color: $primary-color;
@@ -61,6 +60,7 @@ ul li a:hover, ul li a:visited{
 
 .dropdown li a{
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 ul li ul.dropdown{
@@ -135,8 +135,28 @@ header{
         zoom:60%;
     }
 }
+//hero
+#hero{
+    overflow: scroll;
+    height: 1160px;
+}
+//scroll to top button
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 90px; 
+    z-index: 3; 
+    @include border; 
+    outline: none; 
+    background-color: $primary-color;
+    color: $text-color; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 100px; 
+}
 //slideshow
-.event-1, .description-1, .event-2, .description-2, .event-3, .description-3, .event-4, .description-4, .event-5, .description-5, .kontaktai{
+.event-1, .description-1, .event-2, .description-2, .event-3, .description-3, .event-4, .description-4, .event-5, .description-5, .kontaktai, .description-intro-1, .description-intro-2, .description-intro-3, .description-intro-4, .description-intro-5{
     display: flex;
     width:100%;
     justify-content: center;
@@ -152,58 +172,30 @@ header{
 .slideshow img {
     width: 100%;
 }
-.buttons{
-    z-index: 2;
-    position: absolute;
-    padding-top:370px;
-}
-.slidesButton{
-    @include border;
-    border-width: 3px;
-    background-color: $primary-color;
-    border-radius: 50px;
-    zoom:110%;
-}
 //responsive slideshow
 @media (max-width: 882px) {
     .slideshow {
         height: 320px;
-    }
-    .buttons{
-        padding-top:270px;
     }
 }
 @media (max-width: 673px) {
     .slideshow {
         height: 280px;
     }
-    .buttons{
-        padding-top:235px;
-    }
 }
 @media (max-width: 589px) {
     .slideshow {
         height: 230px;
-    }
-    .buttons{
-        padding-top:185px;
     }
 }
 @media (max-width: 484px) {
     .slideshow {
         height: 190px;
     }
-    .buttons{
-        padding-top:100px;
-    }
 }
 @media (max-width: 484px) {
     .slideshow {
         height: 145px;
-    }
-    .buttons{
-        zoom:80%;
-        padding-top:130px;
     }
 }
 //description
@@ -213,9 +205,13 @@ header{
     border-top: none;
     justify-content: center;
 }
+h1 span{
+    background-color: $text-color;
+}
 h1{
     font-weight: bold;
     font-size:16px;
+    color: $primary-color;
 }
 .description{
     width:68%;
@@ -300,7 +296,6 @@ h1{
         padding-top:70px;
     }
 }
-
 //kontaktai
 .kontaktai{
     display: flex;
@@ -317,20 +312,70 @@ h1{
 }
 .kontaktai p{
     padding-top:30px;
+    padding-bottom:0px;
 }
-
+.icons-footer i{
+    color: $text-color;
+}
+//kontaktai forma
+#contact_form input, #contact_form textarea{
+    @include border;
+    border-width: 3px;
+    width: 30%;
+}
+#contact_form{
+    padding-top:20px;
+}
+#contact_form label{
+    padding-top:10px;
+}
+#submit_button{
+    width: 10%;
+    background-color: $text-color;
+    color:$primary-color;
+}
+.copyright{
+    float: left;
+}
 //responsive kontaktai
+@media (max-width: 1093px) {
+    #submit_button{
+        width: 10%;
+    }
+    #contact_form input, #contact_form textarea{
+        width: 30%;
+    }
+}
+@media (max-width: 810px) {
+    #submit_button{
+        width: 20%;
+    }
+    #myBtn {
+        zoom:80%;
+    }
+    #contact_form input, #contact_form textarea{
+        width: 50%;
+    }
+}
 @media (max-width: 565px) {
     .kontaktai img{
         zoom:60%;
     }
-}
-
-@media (max-width: 400px) {
-    .kontaktai img{
-        zoom:40%;
+    #myBtn {
+        margin-right: -20px;
+    }
+    #submit_button{
+        width: 25%;
     }
 }
+@media (max-width: 400px) {
+    .kontaktai img{
+        zoom:45%;
+    }
+
+}
+
+
 
 
 

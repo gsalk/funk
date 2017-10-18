@@ -14,18 +14,21 @@
         <!-- navigation -->
         <nav>
             <ul>
+                <li><a href="index.html">APIE <i class="fa fa-user"></i></a></li>
                 <li>
-                    <a href="#">RENGINIAI &#9662;</a>
+                    <a href="#">RENGINIAI &#9662; <i class="fa fa-th"></i></a>
                     <ul class="dropdown">
-                        <li><a href='#'>RENGINIAI SUAUGUSIEMS</a></li>
-                        <li><a href='#'>VAIKŲ ŠVENTĖS</a></li>
-                        <li><a href='#'>MERGVAKARIAI</a></li>
-                        <li><a href='#'>RENGINIAI ĮMONĖMS</a></li>
+                        <li><a href='kids.html'>VAIKŲ ŠVENTĖS</a></li>
+                        <li><a href='adults.html'>ASMENINĖS ŠVENTĖS</a></li>
+                        <li><a href='bachelor.html'>BERNVAKARIAI</a></li>
+                        <li><a href='hen.html'>MERGVAKARIAI</a></li>
+                        <li><a href='teams.html'>RENGINIAI ĮMONĖMS</a></li>
                     </ul>
                 </li>
-                <li><a href="#kontaktai">KONTAKTAI</a></li>
+                <li><a href="#kontaktai">KONTAKTAI <i class="fa fa-envelope"></i></a></li>
             </ul>
         </nav>
+
         <!-- header -->    
         <header>
             <div class="header-section">
@@ -37,183 +40,176 @@
                 </div>
             </div>
         </header>
+
         <!-- burbuliatorius --> 
-        <section class="event-1">
-            <div class="slideshow">
-                <img class="mySlides1" src="images/burbuliatorius1.jpg">
-                <img class="mySlides1" src="images/burbuliatorius2.jpg">
-                <img class="mySlides1" src="images/burbuliatorius3.jpg">
-            </div>
-            <div class="buttons">
-                <button class="slidesButton" onclick="plusDivs(-1)">&#10094; </button>
-                <button class="slidesButton" onclick="plusDivs(1)"> &#10095;</button>
-            </div>
-        </section>
-        <!-- burbuliatorius aprašymas -->
-        <section class="description-1" id="description-1">
-            <div class="text">
-                <div class="price" id="price1">
-                    <p>1 - 10 ASM. 120 EUR 
-                        (+5 EUR už papildomą žmogų)</p>
+        <div id="hero">
+            <button onclick="topFunction()" id="myBtn">^</button>
+            <section class="event-1">
+                <div class="slideshow">
+                    <img class="mySlides1" src="images/burbuliatorius1.jpg">
+                    <img class="mySlides1" src="images/burbuliatorius2.jpg">
+                    <img class="mySlides1" src="images/burbuliatorius3.jpg">
                 </div>
-                <div class="description">
-                    <h1>BURBULIATORIUS</h1>
-                    <p>RENGINIO TRUKMĖ: 2 val.</p>
-                    <p>Rūgstantys, augantys, putojantys burbulų eksperimentai ir keistuoliški triukai.
-                        Renginio metu kartu pabūsime ir didžiausia burbulų mašina, ir burbulų futbolo žaidėjais.
-                        O ar esi matęs žmogų burbule?</p>
-                </div>
-                <div class="summary">
-                    <summary>*** Renginys skirtas vaikams, atliekamas Jūsų pasirinktoje arba mūsų siūlomoje vietoje.</summary>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- virėjas --> 
-        <section class="event-2">
-            <div class="slideshow">
-                <img class="mySlides2" src="images/virejas1.jpg">
-                <img class="mySlides2" src="images/virejas2.jpg">
-                <img class="mySlides2" src="images/virejas3.jpg">
-            </div>
-            <div class="buttons">
-                <button class="slidesButton" onclick="plusDivs(-1)">&#10094; </button>
-                <button class="slidesButton" onclick="plusDivs(1)"> &#10095;</button>
-            </div>
-        </section>
+            <!-- vaikų švenčių aprašymas -->
+            <section class="description-intro-1" id="description-1">
+                <div class="text">
+                    <div class="price" id="price-intro-1">
+                        <p>1 - 10 ASM. nuo 120 EUR </p>
+                    </div>
+                    <div class="description">
+                        <h1><span>VAIKŲ ŠVENTĖS</span></h1>
+                        <p>Jei tavo galvoje – tikras minčių ir idėjų knibždėlynas, jei nepaliauji klausinėti „kas čia? o kodėl?“, vadinasi, mes su tavimi. Sudrumskime, sujaukime viską, kas nuobodu, nebeįdomu, tiesiog atsibodę.<br>
+                            Ten, kur kiti mato nepataisomą svajotoją, mes atpažįstame genijų. Išraskime naujus dalykus, svajokime, įsivaizduokime, kurkime ir stebinkime!!!</p>
+                    </div>
+                    <div class="summary">
+                        <summary>*** Galime atvykti pas Jus arba pasiūlyti vieną iš mūsų rekomenduojamų vietų.</summary>
+                    </div>
+                </div>
+            </section>
 
-        <!-- virėjas aprašymas -->
-        <section class="description-2">
-            <div class="text">
-                <div class="price" id="price2">
-                    <p>1 - 10 ASM. 130 EUR
-                        (+5 EUR už papildomą žmogų)<br>
+            <!-- virėjas --> 
+            <section class="event-2">
+                <div class="slideshow">
+                    <img class="mySlides2" src="images/virejas1.jpg">
+                    <img class="mySlides2" src="images/virejas2.jpg">
+                    <img class="mySlides2" src="images/virejas3.jpg">
+                </div>
+            </section>
 
-                </div>
-                <div class="description" id="description-2">
-                    <h1>IŠPROTĖJĘS VIRĖJAS</h1>
-                    <p>RENGINIO TRUKMĖ: 2 val.</p>
-                    <p>Išprotėjęs virėjas pavers savo virtuvę unikalia moksline laboratorija.
-                        Pasiraitoję rankoves ir pasidabinę prijuostėmis kibsime į eksperimentines kulinarines pratybas: vaikščiosime per kiaušinius, gaminsime vaivorykštes ir viesulus, piešime ant vandens, auginsime druskos kristalus. Mažos gudrybės virs dideliais stebuklais! </p>
-                </div>
-                <div class="summary">
-                    <summary>*** Renginys skirtas tiek vaikams, tiek suaugusiems, atliekamas Jūsų pasirinktoje arba mūsų siūlomoje vietoje.<br>
-                        !!! Apie alergiją maisto produktams praneškite iš anksto.</summary>
-                </div>
-            </div>
-        </section>
+            <!-- asmeninių švenčių aprašymas -->
+            <section class="description-intro-2">
+                <div class="text">
+                    <div class="price" id="price-intro-2">
+                        <p>1 - 10 ASM. nuo 130 EUR<br>
 
-        <!-- biatlonas --> 
-        <section class="event-3">
-            <div class="slideshow">
-                <img class="mySlides3" src="images/biatlonas1.jpg">
-                <img class="mySlides3" src="images/biatlonas2.jpg">
-                <img class="mySlides3" src="images/biatlonas3.jpg">
-            </div>
-            <div class="buttons">
-                <button class="slidesButton" onclick="plusDivs(-1)">&#10094; </button>
-                <button class="slidesButton" onclick="plusDivs(1)"> &#10095;</button>
-            </div>
-        </section>
+                    </div>
+                    <div class="description" id="intro-2">
+                        <h1><span>ASMENINĖS/ŠEIMOS ŠVENTĖS</span></h1>
+                        <p>Nežinote, kaip padaryti, kad Jūsų organizuojamas renginys būtų nepamirštamas? Pasinaudokite FUNKY-BOX komandos idėjomis! Naudingi patarimai iš profesionalų lūpų, kaip Jūsų šventę paversti ypatinga.<br> 
+                            Šventes organizuojame mes, tad jums teliks nusimesti organizacinius rūpesčius ir atvykti į šventę kaip svečiui. </p>
+                    </div>
+                    <div class="summary">
+                        <summary>*** Galime atvykti pas Jus arba pasiūlyti vieną iš mūsų rekomenduojamų vietų.</summary>
+                    </div>
+                </div>
+            </section>
 
-        <!-- biatlonas aprašymas -->
-        <section class="description-3">
-            <div class="text">
-                <div class="price" id="price3">
-                    <p>50 Eur žmogui
-                        (minimalus dalyvių sk. 6 asmenys) 
-                    </p>
+            <!-- biatlonas --> 
+            <section class="event-3">
+                <div class="slideshow">
+                    <img class="mySlides3" src="images/biatlonas1.jpg">
+                    <img class="mySlides3" src="images/biatlonas2.jpg">
+                    <img class="mySlides3" src="images/biatlonas3.jpg">
                 </div>
-                <div class="description" id="description-3">
-                    <h1>BIATLONO VARŽYBOS</h1>
-                    <p>RENGINIO TRUKMĖ: 2 val.</p>
-                    <p>VIETA: biatlono šaudykla (24 km nuo Vilniaus).<br>
-                        Azarto ir adrenalino pilni plaučiai tik Jūsų komandai organizuojamose biatlono varžybose. Profesionalus treneris mokys visų šio sporto meistriškumo subtilybių: taiklaus šaudymo, slidinėjimo, važiavimo riedslidėmis, inventoriaus paruošimo ir varžybų taisyklių.
-                    </p>
-                </div>
-                <div class="summary">
-                    <summary>*** Renginys skirtas tik suaugusiems, organizuojamas visais metų laikais, instruktuojamas profesionalaus trenerio.
-                        !!! Nepamirškite pasirūpinti patogia apranga.</summary>
-                </div>
-            </div>
-        </section>
-        <!-- tautinis --> 
-        <section class="event-4">
-            <div class="slideshow">
-                <img class="mySlides4" src="images/tautinis1.jpg">
-                <img class="mySlides4" src="images/tautinis2.jpg">
-                <img class="mySlides4" src="images/tautinis3.jpg">
-            </div>
-            <div class="buttons">
-                <button class="slidesButton" onclick="plusDivs(-1)">&#10094; </button>
-                <button class="slidesButton" onclick="plusDivs(1)"> &#10095;</button>
-            </div>
-        </section>
+            </section>
 
-        <!-- tautinis aprašymas -->
-        <section class="description-4">
-            <div class="text">
-                <div class="price" id="price4">
-                    <p>1 - 10 ASM. 150 EUR
-                        (+10 EUR už papildomą žmogų)</p>
+            <!-- bernvakarių aprašymas -->
+            <section class="description-intro-3">
+                <div class="text">
+                    <div class="price" id="price-intro-3">
+                        <p>1 - 10 ASM. nuo 150 EUR
+                        </p>
+                    </div>
+                    <div class="description" id="intro-3">
+                        <h1><span>BERNVAKARIAI</span></h1>
+                        <p>Bernvakaris –  šventė tikriems vyrams. Todėl visos šventės pramogos turi būti subalansuotos būtent jiems.Pamirškite kitas jau pabodusias bernvakarių idėjas ar planus, tik pas mus linksmybės tampa tikru šėlsmu. <br> 
+                            Pasitikėjimo išbandymai, kūrybiškos užduotys, netradicinės idėjos ir ekstremalūs potyriai, - pašėlusi šventė prieš didžiuosius gyvenimo nuotykius!
+                        </p>
+                    </div>
+                    <div class="summary">
+                        <summary>*** Galime atvykti pas Jus arba pasiūlyti vieną iš mūsų rekomenduojamų vietų.</summary>
+                    </div>
                 </div>
-                <div class="description" id="description-4">
-                    <h1>TAUTIŠKA VAKARONĖ</h1>
-                    <p>RENGINIO TRUKMĖ: 2 val.</p>
-                    <p>Renginiai pagal senuosius lietuviškus papročius - meilė protėviams, gamtai ir tradicijoms.
-                        Šventę kursime žaidimais, ritualais, netikėtumais ir išdaigomis, pilna pirkia juoko ir jaukaus artumo.
-                    </p>
-                </div>
-                <div class="summary">
-                    <summary>*** Renginys skirtas suaugusiems, atliekamas Jūsų pasirinktoje arba mūsų siūlomoje vietoje.
-                        !!! Apie alergiją maisto produktams arba žolynams praneškite iš anksto.</summary>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- karinis --> 
-        <section class="event-5">
-            <div class="slideshow">
-                <img class="mySlides5" src="images/karinis1.jpg">
-                <img class="mySlides5" src="images/karinis2.jpg">
-                <img class="mySlides5" src="images/karinis3.jpg">
-            </div>
-            <div class="buttons">
-                <button class="slidesButton" onclick="plusDivs(-1)">&#10094; </button>
-                <button class="slidesButton" onclick="plusDivs(1)"> &#10095;</button>
-            </div>
-        </section>
+            <!-- tautinis --> 
+            <section class="event-4">
+                <div class="slideshow">
+                    <img class="mySlides4" src="images/tautinis1.jpg">
+                    <img class="mySlides4" src="images/tautinis2.jpg">
+                    <img class="mySlides4" src="images/tautinis3.jpg">
+                </div>
+            </section>
 
-        <!-- karinis aprašymas -->
-        <section class="description-5">
-            <div class="text">
-                <div class="price" id="price5">
-                    <p>1 - 10 ASM. 150 EUR
-                        (+10 EUR už papildomą žmogų)</p>
+            <!-- mergvakarių aprašymas -->
+            <section class="description-intro-4">
+                <div class="text">
+                    <div class="price" id="price-intro-4">
+                        <p>1 - 10 ASM. nuo 130 EUR</p>
+                    </div>
+                    <div class="description" id="intro-4">
+                        <h1><span>MERGVAKARIAI</span></h1>
+                        <p>Jei jūsų draugei nepatinka banalūs užsiėmimai ir ji viena iš tų nepaprastų moterų, kuri mėgsta kūrybingas ir smagias šventes, FUNKY-BOX komanda padės suorganizuoti mergvakarį, kuri patiktų ir būtų netikėtumas ne tik būsimai nuotakai, bet ir visoms merginoms. <br>Nepamirštama šventė prieš svarbiausią gyvenimo įvykį su neišdildomu moteriškos vienybės potyriu! 
+                        </p>
+                    </div>
+                    <div class="summary">
+                        <summary>*** Galime atvykti pas Jus arba pasiūlyti vieną iš mūsų rekomenduojamų vietų.</summary>
+                    </div>
                 </div>
-                <div class="description" id="description-5">
-                    <h1>SAVANORIŲ KUOPA</h1>
-                    <p>RENGINIO TRUKMĖ: 2 val.</p>
-                    <p>Savanorių kuopos parengiamosios karinės pratybos: mokysimės kariškos tvarkos, karinės taktikos, teisingos maskuotės, ginklų naudojimo taisyklių, atliksime ekstremalias karines užduotis ir vaišinsimės skaniausia kareiviška koše.
-                        Susitinkam mūšio lauke, savanori!
-                    </p>
+            </section>
+
+            <!-- karinis --> 
+            <section class="event-5">
+                <div class="slideshow">
+                    <img class="mySlides5" src="images/karinis1.jpg">
+                    <img class="mySlides5" src="images/karinis2.jpg">
+                    <img class="mySlides5" src="images/karinis3.jpg">
                 </div>
-                <div class="summary">
-                    <summary>*** Renginys skirtas tiek vaikams, tiek suaugusiems, atliekamas Jūsų pasirinktoje arba mūsų siūlomoje vietoje.
-                        !!! Nepamirškite pasirūpinti patogia apranga.</summary>
+            </section>
+
+            <!-- įmonių renginių aprašymas -->
+            <section class="description-intro-5">
+                <div class="text">
+                    <div class="price" id="price-into-5">
+                        <p>1 - 10 ASM. 150 EUR
+                            (+10 EUR už papildomą žmogų)</p>
+                    </div>
+                    <div class="description" id="intro-5">
+                        <h1><span>RENGINIAI ĮMONĖMS</span></h1>
+                        <p>Geriausiai komandai – geriausios pramogos!<br>
+                            Mes siūlome pamiršti varginantį visos dienos sėdėjimą kėdėje klausantis lektorių, pamiršti „pažink save ir kolegas” programas, o sustiprinti komandą pramogaujant. FUNKY-BOX siūlo unikalias pramogas, kurių metu ne tik formuosite komandą, sustiprinsite tarpusavio ryšius, bet ir pasilinksminsite.
+                        </p>
+                    </div>
+                    <div class="summary">
+                        <summary>*** Galime atvykti pas Jus arba pasiūlyti vieną iš mūsų rekomenduojamų vietų.</summary>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- kontaktai -->
-        <section class="kontaktai" id="kontaktai">
-            <div class="info">
-                <img src="/images/logo.png" alt="logo">
-                <p>Renginiai organizuojami visoje Lietuvoje.<br>
-                    Detalesnė informacija ir registracija<br>
-                    tel. +37062684684<br>
-                    hello.funkybox@gmail.com</p>
-            </div>
-        </section>
+            </section>  
+
+            <!-- kontaktai -->
+            <footer class="kontaktai" id="kontaktai">
+                <div class="info">
+                    <img src="/images/logo.png" alt="logo">
+                    <p>Renginiai organizuojami visoje Lietuvoje.<br>
+                        Detalesnė informacija ir registracija<br>
+                        tel. +37062684684<br>
+                        hello.funkybox@gmail.com</p>
+                    <div class="icons-footer">
+                        <a href="https://www.facebook.com/Funky-box-1199095193547215/" target="_blank"><i class="fa fa-facebook-official fa-4x"></i></a> 
+                    </div>
+                    <form id="contact_form" action="hello.funkybox@gmail.com" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <label for="name">Vardas:</label><br/>
+                            <input id="name" class="input" name="name" type="text" value="" size="30" /><br/>
+                        </div>
+                        <div class="row">
+                            <label for="email">El. pašto adresas:</label><br/>
+                            <input id="email" class="input" name="email" type="text" value="" size="30" /><br/>
+                        </div>
+                        <div class="row">
+                            <label for="message">Žinutė:</label><br/>
+                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
+                        </div>
+                        <button id="submit_button" type="submit">Siųsti</button>
+                    </form>	
+                    <div class="copyright">
+                        <p>FUNKY-BOX © 2017</p>
+                    </div>
+                </div>
+            </footer>
+        </div> 
 
 
 
